@@ -1,0 +1,2 @@
+# lordik
+This is Project

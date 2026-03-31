@@ -1,0 +1,263 @@
+/* public/assets/css/app.css — v2 */
+
+:root {
+    --primary: #1e3a8a;
+    --sidebar-width: 250px;
+}
+
+/* ── STICKY NAVBAR (#1) ─────────────────────── */
+body {
+    background-color: #f1f5f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 64px; /* height of navbar so content not hidden */
+}
+
+.navbar {
+    position: fixed !important;
+    top: 0; left: 0; right: 0;
+    z-index: 1030;
+}
+
+/* ── AVATAR / FOTO PROFIL ─────────────────────── */
+
+/* XS — navbar (36px) */
+.avatar-circle {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    border-radius: 50% !important;
+    border: 2px solid rgba(255,255,255,.35);
+    background: #cbd5e1;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: .95rem;
+    color: #475569;
+    overflow: hidden !important;
+    flex-shrink: 0;
+    line-height: 1;
+    padding: 0 !important;
+}
+.avatar-circle img {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    display: block !important;
+    border-radius: 50% !important;
+}
+
+/* SM — tabel / list (40px) */
+.avatar-sm {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    border-radius: 50% !important;
+    border: 1.5px solid #e2e8f0;
+    background: #f1f5f9;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #94a3b8;
+    overflow: hidden !important;
+    flex-shrink: 0;
+    padding: 0 !important;
+}
+.avatar-sm img {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    display: block !important;
+    border-radius: 50% !important;
+}
+
+/* LG — hero profil alumni (120px) */
+.avatar-circle-lg {
+    width: 120px !important;
+    height: 120px !important;
+    min-width: 120px !important;
+    border-radius: 50% !important;
+    border: 4px solid #fff !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,.14);
+    background: #f1f5f9;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #94a3b8;
+    overflow: hidden !important;
+    flex-shrink: 0;
+    padding: 0 !important;
+}
+.avatar-circle-lg img {
+    width: 120px !important;
+    height: 120px !important;
+    min-width: 120px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    display: block !important;
+    border-radius: 50% !important;
+}
+
+/* XL — halaman detail admin (96px, persegi membulat) */
+.avatar-detail {
+    width: 96px !important;
+    height: 96px !important;
+    min-width: 96px !important;
+    border-radius: 16px !important;
+    border: 2px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    background: #f8fafc;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6rem;
+    color: #94a3b8;
+    overflow: hidden !important;
+    flex-shrink: 0;
+    padding: 0 !important;
+}
+.avatar-detail img {
+    width: 96px !important;
+    height: 96px !important;
+    min-width: 96px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    display: block !important;
+    border-radius: 16px !important;
+}
+
+
+
+
+
+/* ── CARDS ──────────────────────────────────────── */
+.card { border-radius: 12px; }
+
+/* ── FORMS ──────────────────────────────────────── */
+.form-control:focus,
+.form-select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 0.2rem rgba(59,130,246,.2);
+}
+
+/* ── TABLES ─────────────────────────────────────── */
+.table th {
+    font-weight: 600;
+    font-size: .85rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: #64748b;
+}
+
+/* ── BADGES ─────────────────────────────────────── */
+.badge { font-weight: 500; padding: .35em .65em; }
+
+/* ── BUTTONS ────────────────────────────────────── */
+.btn { border-radius: 8px; font-weight: 500; }
+
+/* ── ALERTS ─────────────────────────────────────── */
+.alert { border-radius: 10px; }
+
+/* ── PAGINATION ─────────────────────────────────── */
+.pagination .page-link {
+    border-radius: 6px !important;
+    margin: 0 2px;
+    border: 1px solid #e2e8f0;
+    color: #3b82f6;
+}
+.pagination .page-item.active .page-link {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+/* ── CHAT ───────────────────────────────────────── */
+#chatBox::-webkit-scrollbar { width: 6px; }
+#chatBox::-webkit-scrollbar-track { background: #f1f5f9; }
+#chatBox::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+
+/* ── VACANCY CARDS ──────────────────────────────── */
+.vacancy-card { transition: transform .2s ease, box-shadow .2s ease; }
+.vacancy-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.1) !important;
+}
+
+/* ── STAT CARDS ─────────────────────────────────── */
+.stat-card {
+    border-left: 4px solid transparent;
+    transition: transform .2s;
+}
+.stat-card:hover { transform: translateY(-2px); }
+
+/* ── REKAP TABLE (preview export) ───────────────── */
+.rekap-table th { background: #f8fafc; }
+.rekap-preview {
+    max-height: 420px;
+    overflow-y: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+.rekap-preview::-webkit-scrollbar { width: 5px; }
+.rekap-preview::-webkit-scrollbar-thumb { background:#cbd5e1; border-radius:3px; }
+
+/* ── RESPONSIVE ─────────────────────────────────── */
+@media (max-width: 768px) {
+    body { padding-top: 56px; }
+    .btn-group .btn { padding: .25rem .5rem; font-size: .8rem; }
+    .table { font-size: .8rem; }
+}
+
+/* ── APPLICANT CARDS ─────────────────────────── */
+.applicant-card { transition: transform .15s, box-shadow .15s; }
+.applicant-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,.1) !important; }
+
+/* ── GENDER BADGE ────────────────────────────── */
+.badge-female { background: #fdf2f8; color: #c026d3; border: 1px solid #e879f9; }
+
+/* ── MIN WIDTH 0 for flex truncation ─────────── */
+.min-width-0 { min-width: 0; }
+
+/* ── CREDENTIAL BOX ──────────────────────────── */
+.credential-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; }
+
+/* ── ROLE TAB BUTTON ─────────────────────────── */
+.role-tab-btn { border-radius: 8px !important; }
+
+/* ── TABLE BORDERLESS compact ────────────────── */
+.table-profile td { padding: .4rem .5rem; vertical-align: middle; }
+
+/* ── FONT MONO for credentials ───────────────── */
+.cred-code {
+    font-family: 'Consolas','Courier New',monospace;
+    background: #fff5f5;
+    color: #dc2626;
+    padding: .25rem .6rem;
+    border-radius: 6px;
+    letter-spacing: 1.5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* ── VACANCY LIST PILLS ──────────────────────── */
+.nav-pills .nav-link.bg-white { box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+
+/* ── BACK BUTTON ─────────────────────────────────────── */
+.btn-back {
+    display: inline-flex; align-items: center; gap: .3rem;
+    padding: .28rem .65rem;
+    border: 1px solid #e2e8f0; border-radius: 7px;
+    background: #fff; color: #64748b;
+    font-size: .8rem; font-weight: 500;
+    text-decoration: none; transition: all .12s;
+    cursor: pointer; white-space: nowrap; line-height: 1.4;
+}
+.btn-back i { font-size: .75rem; }
+.btn-back:hover { background: #f1f5f9; color: #1e3a8a; border-color: #3b82f6; }
+@media (max-width: 576px) {
+    .btn-back { font-size: .72rem; padding: .2rem .45rem; gap: .22rem; }
+}
